@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+     <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <button
+      class="btn btn-warning  text-black mx-auto mt-5 d-block"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample"><b>Accordion</b></button>
+         <div class="offcanvas w-50 offcanvas-start" tabindex="-1"id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header justify-content-center bg-secondary text-white">
+        <h5 class="offcanvas-title " id="offcanvasExampleLabel"><b>  Dashboards</b></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p class="ms-4 "><b>“Welcome back! Access your account options and settings using the menu below.”</b></p>
+          <div class="accordion w-50 mx-auto mt-5" id="accordionEx1">
+               <div class="accordion-item">
+                 <h2 class="accordion-header " id="Account">
+                 <button class="accordion-button  bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 <i class="fa-solid fa-user me-2"></i><b>Account</b>
+                  </button>
+                   </h2>
+
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="Account" data-bs-parent="#accordionEx1">
+                  <div class="accordion-body">
+                     <div class="d-grid gap-2">
+                       <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                       <i class="fa-solid fa-pencil"></i>
+                       <span>Edit Profile</span>
+                       </button>
+
+                        <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                         <i class="fa-solid fa-key"></i>
+                        <span>Change Password</span>
+                          </button>
+
+                       <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-bell"></i>
+                       <span>Notification Settings</span>
+                       </button>
+                     </div>
+                   </div>
+                  </div>
+               </div>
+          <div class="accordion-item">
+          <h2 class="accordion-header" id="Privacy">
+            <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             <i class="fa-solid fa-message me-2"></i><span><b>Messages</b></span>
+            </button>
+             </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="Privacy" data-bs-parent="#accordionEx1">
+        <div class="accordion-body">
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+              <i class="fa-solid fa-inbox"></i>
+              <span>Inbox</span>
+            </button>
+
+            <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Sent Messages</span>
+            </button>
+
+            <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+              <i class="fa-solid fa-trash"></i>
+              <span>Trash</span>
+            </button>
+         </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+      <h2 class="accordion-header" id="Settings">   
+        <button class="accordion-button  bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <i class="fa-solid fa-gear me-2"></i><span><b>Settings</b></span>
+        </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="Settings" data-bs-parent="#accordionEx1">
+          <div class="accordion-body">
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Language Preferences</span>
+                </button>
+    
+                <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Privacy Settings</span>
+                </button>
+    
+                <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <span>Data Download</span>
+                </button>
+            </div>
+          </div>
+          </div>
+          <div class="accordion-item">
+        <h2 class="accordion-header" id="Support">
+            <button class="accordion-button bg-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class="fa-solid fa-circle-question me-2"></i><span><b>Support</b></span>
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="Support" data-bs-parent="#accordionEx1">
+            <div class="accordion-body">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Help Center</span>
+                    </button>
+        
+                    <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact Support</span>
+                    </button>
+        
+                    <button type="button" class="btn btn-light border d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Documentation</span>
+                    </button>
+
+          </div>
+          </div>
+          </div>
+          <div class="accordion-item">
+        <h2 class="accordion-header" id="logoout">
+            <button class="accordion-button bg-danger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="fa-solid fa-right-from-bracket me-2"></i><span><b>Log Out</b></span>
+            </button>
+        </h2>
+          </div>
+
+      </div>
+    </div>
+    </div>
+          
+
+         <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
